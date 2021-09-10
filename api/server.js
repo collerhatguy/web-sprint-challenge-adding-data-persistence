@@ -11,7 +11,7 @@ server.use(express.json())
 server.use(cors())
 server.use("/api/tasks", taskEndpoints)
 server.use("/api/projects", projectEndpoints)
-server.use("/api/resorces", resourceEndpoints)
+server.use("/api/resources", resourceEndpoints)
 
 server.use((err, req, res, next) => {
     const { status, message, stack } = err
